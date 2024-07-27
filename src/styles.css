@@ -1,0 +1,106 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  font-weight: 400;
+
+  color: white;
+  background-color: #030615;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+header img {
+  height: 2.5rem;
+  width: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  gap: 14px;
+}
+
+.search-wrapper {
+  display: flex;
+  gap: 14px;
+}
+
+header input {
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+}
+
+header button {
+  border-radius: 14px;
+  background: transparent;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.6;
+  transition: 0.2s ease-in;
+}
+
+header button,
+header input {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+.profile-avatar img {
+  height: 16rem;
+  border-radius: 10%;
+  border: 0.2rem rgb(6, 46, 103) solid;
+  box-shadow: 5px 5px 10px rgb(17, 9, 108);
+  transition: 0.3s ease-in-out;
+}
+
+.profile-avatar img:hover {
+  height: 16.5rem;
+  box-shadow: 10px 10px 10px rgb(17, 9, 108);
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+  margin: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.repositories-list {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 2rem;
+  color: #04114f;
+  border-radius: 0.5rem;
+}
